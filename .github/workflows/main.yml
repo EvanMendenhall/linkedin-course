@@ -22,8 +22,8 @@ jobs:
 
       - name: Push Repo
         run: |
-          git config --global user.evanmendenhall 'github-actions'
-          git config --global user.evanmenden@protonmail.com 'github-actions@github.com'
+          git config --global user.name 'evanmendenhall'
+          git config --global user.email 'evanmenden@protonmail.com'
           git add .
           git commit -m "Modified Feed"
           if git status | grep 'nothing to commit'; then
